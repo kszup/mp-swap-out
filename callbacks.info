@@ -1,0 +1,7 @@
+/** @brief 
+ *
+ */
+int emberAfPluginMpSwapOutCallback()
+{
+  return 0;
+}

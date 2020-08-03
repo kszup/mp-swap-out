@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<cli>
+  <group id="plugin-mp-swap-out" name="Plugin Commands: Swap Out Support">
+    <description>
+      The Multi-PAN Swap Out commands provide functionality to restoring network parameters to a new network index.
+    </description>
+  </group>
+  <command cli="plugin mp-swap-out print all" 
+           functionName="emberAfPluginMpSwapOutPrintAll" 
+           group="plugin-mp-swap-out">
+    <description>
+      This command prints current network and (TODO)security information.
+    </description>
+  </command>
+  <command cli="plugin mp-swap-out print node-info"
+           functionName="emberAfPluginMpSwapOutPrintNodeInfo"
+           group="plugin-mp-swap-out">
+    <description>
+      This command prints Node ID, PAN ID, Radio Power, Radio Channel, Extended PAN ID.
+    </description>
+  </command>  
+  <command cli="plugin mp-swap-out print security-info" 
+           functionName="emberAfPluginMpSwapOutPrintSecurityInfo"
+           group="plugin-mp-swap-out">
+    <description>
+      (TODO)This command prints security information needed for a Trust Center replacement.
+    </description>
+  </command>
+  <command cli="plugin mp-swap-out save node-info"
+           functionName="emberAfPluginMpSwapOutSaveNodeInfo" 
+           group="plugin-mp-swap-out">
+    <description>
+      This command saves node-info to backup/backup.txt.
+    </description>
+  </command>
+  <command cli="plugin mp-swap-out save security-info"
+           functionName="emberAfPluginMpSwapOutSaveSecurityInfo" 
+           group="plugin-mp-swap-out">
+    <description>
+      This command saves security-info to backup/backup.txt.
+    </description>
+  </command>
+  <command cli="plugin mp-swap-out read backup" 
+           functionName="emberAfPluginMpSwapOutReadBackup" 
+           group="plugin-mp-swap-out">
+    <description>
+      This command reads and prints what is in backup/backup.txt.
+    </description>
+  </command>
+  <command cli="plugin mp-swap-out restore node-info"
+           functionName="emberAfPluginMpSwapOutRestoreNodeInfo" 
+           group="plugin-mp-swap-out">
+    <description>
+      This command restores node-info to NCP from backup.txt.
+    </description>
+  </command>
+  <command cli="plugin mp-swap-out restore security-info"
+           functionName="emberAfPluginMpSwapOutRestoreSecurityInfo" 
+           group="plugin-mp-swap-out">
+    <description>
+      (TODO)This command restores security-info to NCP from backup.txt.
+    </description>
+  </command>
+</cli>
