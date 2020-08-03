@@ -8,9 +8,9 @@ When upgrading a host+NCP device to use the Multi-PAN feature offered by Silicon
 
 ## Dependencies
 
--  EmberZNet 6.8.x +
--- Multi-PAN library
--- Multi-Network Library
+- EmberZNet 6.8.x +
+- Multi-PAN library
+- Multi-Network Library
 - Readline
 - ncurses
 
@@ -21,7 +21,7 @@ Currently, this plugin is not fully featured for any network swap out. It is foc
 The use case here will be to move a network PAN to the secondary network index after an upgrade.
 
 #### Setup
-1. Copy the contents of this repo to the plugin directory of the EmberZNet SDK (protocol/zigbee/app/framework/plugin-host/mp-swap-out) and restart Simplicity Studio so that AppBuilder can recognize the new plugin and populate the Plugins tab.
+1. Copy the contents of this repo to the plugin directory of the EmberZNet SDK (protocol/zigbee/app/framework/plugin-host/mp-swap-out) and restart Simplicity Studio so that AppBuilder can recognize the new plugin and populate the list under the Plugins tab.
 2. Add the plugin to the host project through AppBuilder and build. The NCP does not require any changes.
 
 #### Example procedure
@@ -50,7 +50,7 @@ Extended Pan Id: 819E7A854F19DF62
 ZC> network leave
 ```
 
-UPGRADE THE HOST AND NCP TO NEW APPLICATION AND NCP with the Multi-PAN feature. Switch t
+Upgrade the host and NCP to the new application and NCP firmware including the Multi-PAN feature.
 
 ```
 UpgradedZC> network set 1
