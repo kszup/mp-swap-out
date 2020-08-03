@@ -25,7 +25,7 @@ The use case here will be to move a network PAN to the secondary network index a
 2. Add the plugin to the host project through AppBuilder and build. The NCP does not require any changes.
 
 #### Example procedure
-The CLI is documented although not very verbosely so an example is provided. This example, is focused on an old custom network that does not use available securit from the zigbee protocol. It is assumed that the host is based on a Linux system. Let's call the original host+NCP system "ZC" (short for zigbee coorindator) and the new system "UpgradedZC". The network should have a few devices connected to it to make sure they can communicate with the coordinator after the upgrade and swap-out. The example will backup the network data to a file on the ZC system and then restore that data to Network Index 1 on UpgradedZC system.
+The CLI is documented although not very verbosely so an example is provided. This example, is focused on an old custom network that does not use available securit from the zigbee protocol. It is assumed that the host is based on a Linux system. Let's call the original host+NCP system *"ZC"* (short for zigbee coorindator) and the new system *"UpgradedZC"*. The network should have a few devices connected to it to make sure they can communicate with the coordinator after the upgrade and swap-out. The example will backup the network data to a file on the ZC system and then restore that data to Network Index 1 on UpgradedZC system.
 
 ```
 ZC> plugin mp-swap-out print node-info
@@ -67,4 +67,4 @@ EMBER_NETWORK_UP 0x0000
 ```
 
 ## References
-- https://www.silabs.com/community/wireless/zigbee-and-thread/knowledge-base.entry.html/2018/08/07/trust_center_replace-0wp0
+- [Trust Center Replacement](https://www.silabs.com/community/wireless/zigbee-and-thread/knowledge-base.entry.html/2018/08/07/trust_center_replace-0wp0)
